@@ -1,89 +1,126 @@
-/* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* 🌌 Base Styling */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
   background-color: #121212;
-  color: #e0e0e0;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 10%;
-  background-color: #1a1a1a;
-  border-bottom: 2px solid #0d47a1;
+a {
+  color: #ff3c3c;
+  text-decoration: none;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ff8c00;
+a:hover {
+  text-decoration: underline;
 }
 
+header, footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔗 Navigation */
 nav ul {
   list-style: none;
+  padding: 0;
   display: flex;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #e0e0e0;
-  transition: color 0.3s;
+nav ul li a {
+  color: #ff3c3c;
+  font-weight: bold;
 }
 
-nav a:hover,
-nav a.active {
-  color: #0d47a1;
-}
-
+/* 🌄 Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(145deg, #1e1e1e, #111);
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #2c2c2c, #1e1e1e);
 }
 
 .hero .highlight {
-  color: #0d47a1;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #ccc;
+  color: #ff3c3c;
 }
 
 .btn {
-  background-color: #ff8c00;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff3c3c;
+  color: #fff;
+  border-radius: 5px;
   font-weight: bold;
-  border-radius: 4px;
-  transition: background 0.3s;
 }
 
 .btn:hover {
-  background-color: #e67600;
+  background-color: #ff5c5c;
 }
 
-footer {
-  background-color: #1a1a1a;
-  padding: 1rem 10%;
+/* 🧱 Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px 15px;
+  justify-items: center;
+}
+
+/* 🎬 Movie Card */
+.movie-card {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 10px;
   text-align: center;
-  font-size: 0.9rem;
-  color: #aaa;
+}
+
+.watch-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #ff3c3c;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.watch-btn:hover {
+  background-color: #ff5c5c;
+}
+
+/* 📞 Contact Section */
+#contact {
+  padding: 30px;
+  text-align: center;
+}
+
+#contact img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* 🧼 Footer */
+footer p {
+  font-size: 14px;
+  color: #ccc;
 }
