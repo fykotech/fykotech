@@ -1,0 +1,126 @@
+/* 🌌 Base Styling */
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #ff3c3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔗 Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ff3c3c;
+  font-weight: bold;
+}
+
+/* 🌄 Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #2c2c2c, #1e1e1e);
+}
+
+.hero .highlight {
+  color: #ff3c3c;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff3c3c;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ff5c5c;
+}
+
+/* 🧱 Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px 15px;
+  justify-items: center;
+}
+
+/* 🎬 Movie Card */
+.movie-card {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.watch-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #ff3c3c;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.watch-btn:hover {
+  background-color: #ff5c5c;
+}
+
+/* 📞 Contact Section */
+#contact {
+  padding: 30px;
+  text-align: center;
+}
+
+#contact img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* 🧼 Footer */
+footer p {
+  font-size: 14px;
+  color: #ccc;
+}

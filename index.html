@@ -2,34 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Fykotech is a remote-first tech company based in Ghana offering modern web development, app design, software solutions, and tech support services." />
-  <meta name="keywords" content="Fykotech, web development Ghana, app development, remote tech support, software development, Frimpong Kofi Konadu" />
-  <meta name="author" content="Frimpong Kofi Konadu" />
+  <meta name="description" content="SeriesSpot is Ghana’s cozy hub for movie and series previews, trailers, and binge-worthy media insights. Created by Frimpong Kofi Konadu." />
+  <meta name="keywords" content="SeriesSpot, movies, series, trailers, Ghana media hub, Fykotech" />
+  <meta name="author" content="Fykotech" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fykotech | Remote Web & App Development in Ghana</title>
+  <title>SeriesSpot | Movie & TV Series Hub</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <div class="logo">fykotech</div>
+    <div class="logo">SeriesSpot</div>
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#series">Series</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Your Reliable <span class="highlight">Remote Tech Experts</span></h1>
-    <p>We build software, websites, and apps—remotely and reliably.</p>
-    <a href="services.html" class="btn">Explore Our Services</a>
+    <h1>Welcome to <span class="highlight">SeriesSpot</span></h1>
+    <p>Curated trailers, previews, and media insights — crafted in Ghana and built to binge.</p>
+    <a href="#movies" class="btn">Browse Featured</a>
   </section>
 
+  <main>
+    <!-- 🎬 Movies Section -->
+    <section id="movies">
+      <h2>Featured Movies</h2>
+      <div class="card-grid">
+        <div class="movie-card">
+          <img src="assets/images/thumbnails/thunderbolts.jpg" alt="Thunderbolts poster">
+          <div class="card-content">
+            <h3>Thunderbolts</h3>
+            <p>2025 • Action</p>
+            <a href="movies/thunderbolts.html" class="watch-btn">Watch Now</a>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <img src="assets/images/thumbnails/final-destination-bloodlines.jpg" alt="Final Destination Bloodlines poster">
+          <div class="card-content">
+            <h3>Final Destination Bloodlines</h3>
+            <p>2025 • Horror</p>
+            <a href="movies/final-destination-bloodlines.html" class="watch-btn">Watch Now</a>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <img src="assets/images/thumbnails/ballerina.jpg" alt="Ballerina poster">
+          <div class="card-content">
+            <h3>Ballerina</h3>
+            <p>2025 • Thriller</p>
+            <a href="movies/ballerina.html" class="watch-btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📺 Series Section -->
+    <section id="series">
+      <h2>Featured Series</h2>
+      <div class="card-grid">
+        <div class="movie-card">
+          <img src="assets/images/thumbnails/ironheart.jpg" alt="Ironheart poster">
+          <div class="card-content">
+            <h3>Ironheart</h3>
+            <p>2025 • Sci-Fi</p>
+            <a href="tv-series/ironheart.html" class="watch-btn">Watch Now</a>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <img src="assets/images/thumbnails/squid-game.jpg" alt="Squid Game poster">
+          <div class="card-content">
+            <h3>Squid Game: The Challenge</h3>
+            <p>2023 • Reality</p>
+            <a href="tv-series/squid-game.html" class="watch-btn">Watch Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:fykotech@gmail.com">fykotech@gmail.com</a></p>
+      </p>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Fykotech | Contact us: <a href="mailto:fykotech@gmail.com">fykotech@gmail.com</a> | +233 50 264 1309</p>
+    <p>&copy; 2025 SeriesSpot | Crafted by Fykotech</p>
   </footer>
 </body>
 </html>
